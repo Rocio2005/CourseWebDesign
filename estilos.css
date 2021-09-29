@@ -1,0 +1,48 @@
+/*Etiquetas p*/
+.texHeader1 {
+    font-size: 70%;
+    font-weight: bold;
+}
+.texHeader {
+    font-size: 80%;
+}
+
+.idiomas{
+    font-size: 90%;
+    
+}
+
+.notaExtensa{
+    text-align: justify;
+}
+
+.texFinal{
+    font-style: italic;
+}
+
+/*Etiquetas a*/
+.cuentas{
+    font-size: 80%;
+    text-decoration: underline;
+}
+.idiomas1{
+    text-decoration: underline;
+}
+
+/*imagenes*/
+.primerasImag{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.imgGrande{
+    vertical-align: text-top;
+
+}
+
+.ultImag{
+    width: 200px;
+    height: 150px;
+}
+
