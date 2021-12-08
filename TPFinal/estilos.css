@@ -1,0 +1,492 @@
+@font-face {
+    font-family: "Angelta";
+    src: url("font/angelta_script/Angelta\ Script.ttf");
+}
+@font-face {
+    font-family: "Shepping";
+    src: url("font/sheeping_dogs/SheepingDogs.ttf");
+}
+@font-face {
+    font-family: "Diplomata";
+    src: url("font/Diplomata/Diplomata-Regular.ttf");
+}
+@font-face {
+    font-family: "hugo";
+    src: url("font/hugolers/Hugolers\ Stylish\ Modern.ttf");
+}
+@font-face {
+    font-family: "tecnico";
+    src: url("font/tecnico/tecnico_regularitalic.ttf");
+}
+/*PC*/
+body{
+    width: 100%;
+    background-color:antiquewhite;
+    
+}
+.menu{
+    display: none;
+}
+.imagen-tb-cel{
+    display: none;
+}
+.primseccion{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+h1{
+    text-align: center;
+    font-size: 12vh;
+    font-family: Angelta;
+    padding-top: 1%;
+}
+img {
+    height: 500px;
+    width: 500px;
+    border: 20px;
+}
+
+.ultim div{
+    height:50%;
+    margin: 30%;
+    text-align: center;
+    font-style: oblique;
+}
+
+.ultim p{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 4vh;
+    font-family: hugo;
+}
+.ultim a{
+    color: antiquewhite;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid chocolate;
+    text-decoration: none;
+    background-color: #FF5151;
+    animation-name: aparecer;
+    animation-duration: 5s;
+
+}
+/*ANIMACION PARA EL ÚLTIMO SLIDE DEL CARRUSEL*/
+@keyframes aparecer {
+    from{
+        margin-left: 150%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+.flexible{
+    display: flex;
+}
+
+.bordes{
+    border-radius: 300px;
+    border:2px solid chocolate;
+}
+
+.chico{
+    width: 50%;
+    display: inline;
+}
+
+.informacion{
+    display: inline;
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+.informacion h2{
+    font-family: hugo;
+    text-align: center;
+    font-size: 9vh;
+}
+.informacion div{
+    font-family:tecnico;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+.informacion a{
+    color: antiquewhite;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid chocolate;
+    text-decoration: none;
+    background-color: #FF5151;
+    
+}
+
+/*ANIMACION DEL BOTON de la etiqueta a de la caja INFORMACION, boton de Whatsapp*/
+.informacion a:hover{
+    animation-name: botWhat;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes botWhat {
+    0% {
+        background-color:#FF5151;
+    }
+    50% {
+        background-color:antiquewhite;
+        color: #FF5151;
+        padding: 20px;
+        border: 5px solid chocolate;
+        font-size:4vh;
+    }
+    100% {
+        background-color:#FF5151;
+    }
+    
+}
+
+hr{
+    color: chocolate;
+    background-color: chocolate;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+/*SECCION COMENTARIOS*/
+.comentarios {
+    height: 10%;
+    width: 90% ;
+    display: flex;
+    margin-left: 10%;
+}
+.comentarios p{
+    font-family:Sheeping;
+    font-size: 2.3vh;
+    font-style: oblique;
+    
+}
+.comentarios img{
+    border-radius: 360px;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 5%;
+}
+.comen1{
+    width: 45%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.comen2{
+    width: 45%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+/*SECCION FOOTER*/
+footer {
+    padding-top: 1%;
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    background:linear-gradient(90deg,rgb(90, 87, 87), #FF5151);
+}
+footer h3{
+    font-size: 2vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer p{
+    font-size: 2vh;
+    text-align: center;
+    display: block;
+}
+footer div{
+    display: flex;
+    width: 95%;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.redes {
+    width: 30%;
+    display: block;
+    text-align: center;
+    font-size: 2vh;
+}
+.redes a{
+    display: block;
+
+}
+.desarrollador{
+    width: 30%;
+    text-align: center;
+    display: block;
+}
+.contacto{
+    width: 30%;
+    text-align: center;
+    display: block;
+    font-size: 2vh;
+}
+.contacto a{
+    color: #FF5151;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid chocolate;
+    text-decoration: none;
+    background-color:antiquewhite;
+}
+
+/*SEGUNDO NIVEL TABLET */
+
+@media screen and (max-width: 1200px) {
+    body{
+        width: 100%;
+        background-color:antiquewhite;
+        height: 100%;
+    }
+    h1{
+        display: none;
+    }
+
+    .primseccion{
+        display: none;
+    }
+    .imagen-tb-cel{
+        display: contents;
+        width: 100%;
+    }
+    .imagen-tb-cel img{
+        width: 100%;
+    }
+
+    .menu{
+        display: contents;
+    }
+    .navbar-brand{
+        text-align: center;
+        font-size: 4vh;
+        font-family: Angelta;
+        padding-top: 1%;
+    }
+    .animenu{
+        width: 50%;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .animenu:hover{
+        background-color: #FF5151;
+        border: 2px solid chocolate;
+        border-radius: 20px;
+        animation-name: mover;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        text-align: center;
+    }
+    @keyframes mover {
+        from {
+            margin-left: 1%;
+        }
+        to{
+            margin-left: 20%;
+        }
+        
+    }
+
+
+
+    .comentarios{
+        display: none;
+    }
+    footer {
+        padding-top: 1%;
+        width: 100%;
+        margin-top: 2%;
+        text-align: center;
+        background:linear-gradient(90deg,rgb(90, 87, 87), #FF5151);
+        margin-top: 20%;
+    }
+    footer h3{
+        font-size: 1.5vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    footer p{
+        font-size: 1.2vh;
+        text-align: center;
+        display: block;
+    }
+    footer a{
+        font-size: 1vh;
+    }
+
+    .bodyform footer{
+        margin-bottom: 0%;
+        padding-bottom:1.5%;
+    }
+}  
+
+/*TERCER NIVEL CELULAR*/
+
+@media screen and (max-width: 550px) {
+    body{
+        width: 100%;
+        background-color:antiquewhite;
+        height: 100%;
+    }
+    h1{
+        display: none;
+    }
+
+    .primseccion{
+        display: none;
+    }
+
+    .menu{
+        display: contents;
+    }
+    .navbar-brand{
+        text-align: center;
+        font-size: 4vh;
+        font-family: Angelta;
+        padding-top: 1%;
+    }
+    .comentarios {
+        display: none;
+    }
+    .imagen-tb-cel{
+        display: contents;
+        width: 100%;
+    }
+    .imagen-tb-cel img{
+        width: 100%;
+    }
+
+    footer {
+        padding-top: 1%;
+        width: 100%;
+        margin-top: 20%;
+        text-align: center;
+        background:linear-gradient(90deg,rgb(90, 87, 87), #FF5151);
+        /*position: absolute;*/
+    }
+    footer h3{
+        font-size: 1vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    footer p{
+        font-size: 1vh;
+        text-align: center;
+        display: block;
+    }
+    footer a{
+        font-size: 0.7vh;
+    }
+
+    .bodyform footer{
+        margin-bottom: 0%;
+        padding-bottom:1.5%;
+    }
+    .redes{
+        display: none;
+    }
+    .contacto{
+        width: 50%;
+    }
+    .desarrollador{
+        width: 50%;
+    }
+}
+
+/*FORMULARIO DE CONTACTO*/
+.bodyform{
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    height: 100%;
+}
+
+
+.bodyform h2{
+    margin-top: 2%;
+    font-family: tecnico;
+    font-size: 9vh;
+    text-align: center;
+}
+.seccionFormulario{
+    width: 60%;
+    margin-left: 20%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 8%;
+    
+}
+
+.foot-form{
+    margin-top: 80%;
+}
+input {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+textarea {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+#botonEnviar {
+    background-color: #FF5151;
+    color: antiquewhite;
+    border-radius: 10px;
+    font-weight: bold;
+    border-color: chocolate;
+    padding: 1%;
+    width: 20%;
+    margin: 5%;
+    font-size: 2vh;
+}
+
+#volverAInicio{
+    background-color: #FF5151;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: chocolate;
+    padding: 1%;
+    width: 20%;
+    margin: 5%;
+    font-size: 2vh;
+}
+#volverAInicio a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+h4 {
+    border-style: double;
+    border-color: chocolate;
+    border-radius: 20px;
+    border-width: 2px;
+    border: solid;
+    padding: 1%;
+    color:white;
+    background-color: #FF5151
+}
